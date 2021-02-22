@@ -5,7 +5,10 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";
+static char *font = "DinaRemaster:pixelsize=16:antialias=false:autohint=false";
+static char *font2[] = {
+    "EmojiOne:pixelsize=16:antialias=true:autohint=true",
+};
 static int borderpx = 2;
 
 /*
@@ -99,31 +102,30 @@ float alpha = 0.9;
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
     /* 8 normal colors */
-    "black",
-    "red3",
-    "green3",
-    "yellow3",
-    "blue2",
-    "magenta3",
-    "cyan3",
-    "gray90",
+    "#1f3d47", // black   //
+    "#f56789", // red     //
+    "#78e378", // green   //
+    "#d9b00d", // yellow  //
+    "#6a97c8", // blue    //
+    "#e951b4", // magenta //
+    "#52d1bc", // cyan    //
+    "#a6acb6", // white   //
 
     /* 8 bright colors */
-    "gray50",
-    "red",
-    "green",
-    "yellow",
-    "#5c5cff",
-    "magenta",
-    "cyan",
-    "white",
+    "#4d7380", // black   //
+    "#ff2740", // red     //
+    "#abe15b", // green   //
+    "#ffd242", // yellow  //
+    "#0092ff", // blue    //
+    "#9a5feb", // magenta //
+    "#67fff0", // cyan    //
+    "#e4ecf3", // white   //
 
-    [255] = 0,
-
-    /* more colors can be added after 255 to use with DefaultXX */
-    "#cccccc",
-    "#555555",
-    "black",
+    /* other colors */
+    [255] = 0, // ?
+    "#e6e6fa", // foreground / cursor
+    "white",   // ?
+    "#031517", // background
 };
 
 /*
@@ -148,8 +150,8 @@ static unsigned int cursorshape = 2;
  * Default columns and rows numbers
  */
 
-static unsigned int cols = 80;
-static unsigned int rows = 24;
+static unsigned int cols = 100;
+static unsigned int rows = 30;
 
 /*
  * Default colour and shape of the mouse cursor
