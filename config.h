@@ -1,3 +1,4 @@
+// nord // static const char *colorname[]={"#121C21", "#E44754", "#89BD82", "#F7BD51", "#5486C0", "#B77EB8", "#50A5A4", "#FFFFFF", "#52606B", "#E44754", "#89BD82", "#F7BD51", "#5486C0", "#B77EB8", "#50A5A4", "#FFFFFF",[255] = 0,"#b3b8c3","#b3b8c3","#121b21",};//Gogh
 /* See LICENSE file for copyright and license details. */
 
 /*
