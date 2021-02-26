@@ -1,4 +1,3 @@
-// nord // static const char *colorname[]={"#121C21", "#E44754", "#89BD82", "#F7BD51", "#5486C0", "#B77EB8", "#50A5A4", "#FFFFFF", "#52606B", "#E44754", "#89BD82", "#F7BD51", "#5486C0", "#B77EB8", "#50A5A4", "#FFFFFF",[255] = 0,"#b3b8c3","#b3b8c3","#121b21",};//Gogh
 /* See LICENSE file for copyright and license details. */
 
 /*
@@ -97,37 +96,96 @@ char *termname = "st";
  */
 unsigned int tabspaces = 8;
 
-/* bg opacity */
-float alpha = 0.9;
-
 /* Terminal colors (16 first used in escape sequence) */
+// custom1
+// float alpha = 0.9;
+// static const char *colorname[] = {
+//     /* 8 normal colors */
+//     "#1f3d47", // black   //
+//     "#f56789", // red     //
+//     "#78e378", // green   //
+//     "#d9b00d", // yellow  //
+//     "#6a97c8", // blue    //
+//     "#e951b4", // magenta //
+//     "#52d1bc", // cyan    //
+//     "#a6acb6", // white   //
+
+//     /* 8 bright colors */
+//     "#4d7380", // black   //
+//     "#ff2740", // red     //
+//     "#abe15b", // green   //
+//     "#ffd242", // yellow  //
+//     "#0092ff", // blue    //
+//     "#9a5feb", // magenta //
+//     "#67fff0", // cyan    //
+//     "#e4ecf3", // white   //
+
+//     /* other colors */
+//     [255] = 0, // ?
+//     "#e6e6fa", // foreground / cursor
+//     "white",   // ?
+//     "#031517", // background
+// };
+
+// custom2
+float alpha = 0.9;
 static const char *colorname[] = {
     /* 8 normal colors */
     "#1f3d47", // black   //
-    "#f56789", // red     //
-    "#78e378", // green   //
-    "#d9b00d", // yellow  //
-    "#6a97c8", // blue    //
-    "#e951b4", // magenta //
-    "#52d1bc", // cyan    //
-    "#a6acb6", // white   //
+    "#e06c75", // red     //
+    "#98c379", // green   //
+    "#e5c07b", // yellow  //
+    "#61afef", // blue    //
+    "#c678dd", // magenta //
+    "#56b6c2", // cyan    //
+    "#abb2bf", // white   //
 
     /* 8 bright colors */
     "#4d7380", // black   //
-    "#ff2740", // red     //
-    "#abe15b", // green   //
+    "#EC407A", // red     //
+    "#78e378", // green   //
     "#ffd242", // yellow  //
     "#0092ff", // blue    //
-    "#9a5feb", // magenta //
+    "#E040FB", // magenta //
     "#67fff0", // cyan    //
-    "#e4ecf3", // white   //
+    "#EEEEEE", // white   //
 
     /* other colors */
     [255] = 0, // ?
-    "#e6e6fa", // foreground / cursor
+    "#FAFAFA", // foreground / cursor
     "white",   // ?
     "#031517", // background
 };
+
+// nord darker
+// float alpha = 1;
+// static const char *colorname[] = {
+//     /* 8 normal colors */
+//     "#434C5E", // black   //
+//     "#BF616A", // red     //
+//     "#A3BE8C", // green   //
+//     "#EBCB8B", // yellow  //
+//     "#5E81AC", // blue    //
+//     "#B48EAD", // magenta //
+//     "#88C0D0", // cyan    //
+//     "#D8DEE9", // white   //
+
+//     /* 8 bright colors */
+//     "#4C566A", // black   //
+//     "#BF616A", // red     //
+//     "#A3BE8C", // green   //
+//     "#EBCB8B", // yellow  //
+//     "#5E81AC", // blue    //
+//     "#B48EAD", // magenta //
+//     "#88C0D0", // cyan    //
+//     "#ECEFF4", // white   //
+
+//     /* other colors */
+//     [255] = 0, // ?
+//     "#E5E9F0", // foreground / cursor
+//     "white",   // ?
+//     "#1E252B", // background
+// };
 
 /*
  * Default colors (colorname index)
