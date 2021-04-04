@@ -6,9 +6,7 @@
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
 static char *font = "DinaRemaster:pixelsize=16:antialias=false:autohint=false";
-static char *font2[] = {
-    "EmojiOne:pixelsize=16:antialias=true:autohint=true",
-};
+static char *font2[] = {"JoyPixels:pixelsize=10:antialias=true:autohint=true"};
 static int borderpx = 2;
 
 /*
