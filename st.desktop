@@ -3,5 +3,5 @@ Type=Application
 Name=st
 Comment=simple-terminal emulator for X
 Icon=utilities-terminal
-Exec=st
+Exec=st -e tmux
 Categories=System;TerminalEmulator
