@@ -1,3 +1,6 @@
-
 *.o
-st
+*.rej
+*.orig
+st-dina
+st-fira
+st/config.h
