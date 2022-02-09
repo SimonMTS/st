@@ -1,2 +1,5 @@
 static char *font = "FiraCode-Bold:pixelsize=22:antialias=true:autohint=false";
 static uint is_fira_font = 1;
+
+// libxft-bgra // https://wiki.archlinux.org/title/St#Crashes_if_page_contains_emoji_characters
+static char *font2[] = {"JoyPixels:pixelsize=16:antialias=true:autohint=true"};
