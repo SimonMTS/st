@@ -1045,7 +1045,11 @@ xloadfonts(const char *fontstr, double fontsize)
 		die("can't open font %s\n", fontstr);
 
 	FcPatternDel(pattern, FC_WEIGHT);
-	if (is_fira_font) FcPatternAddInteger(pattern, FC_WEIGHT, FC_WEIGHT_BOLD);
+
+    // noboldtext (with dina)
+	if (!strncmp("Dina",font,4) == 0)
+        FcPatternAddInteger(pattern, FC_WEIGHT, FC_WEIGHT_BOLD);
+
 	if (xloadfont(&dc.ibfont, pattern))
 		die("can't open font %s\n", fontstr);
 
