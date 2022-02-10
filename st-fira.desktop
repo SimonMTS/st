@@ -3,5 +3,5 @@ Type=Application
 Name=st Fira
 Comment=simple-terminal emulator for X, with Fira Code
 Icon=utilities-terminal
-Exec=st-fira
+Exec=/home/simon/.scripts/st-fira
 Categories=System;TerminalEmulator
